@@ -12,8 +12,46 @@ export function ChillGuy(props) {
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Plane001.geometry}
-        material={nodes.Plane001.material}
+        geometry={nodes.Plane002.geometry}
+        material={materials.skin}
+        position={[0, 0, 0.729]}
+        scale={[1, 1, 0.467]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plane001_1.geometry}
+        material={materials.Material}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plane001_2.geometry}
+        material={materials.nose}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plane001_3.geometry}
+        material={materials.skin}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plane001_4.geometry}
+        material={materials.clothe}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plane001_5.geometry}
+        material={materials.pants}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plane001_6.geometry}
+        material={materials.pants2}
       />
     </group>
   );
