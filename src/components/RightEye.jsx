@@ -18,10 +18,7 @@ export function RightEye(props) {
         scale={[0.152, 0.098, 0.122]}
       >
         <shaderMaterial
-          blending={THREE.AdditiveBlending}
-          depthTest={false}
           attach="material"
-          transparent={true}
           vertexShader={eyeVertexShader}
           fragmentShader={eyeFragmentShader}
         />
