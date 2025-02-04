@@ -1,3 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Sour Gummy", "sans-serif";
+}
+
 html {
   margin: 0;
   padding: 0;
