@@ -5,7 +5,7 @@ import Experience from "./Experience";
 
 const FiberContainer = () => {
   return (
-    <Canvas>
+    <Canvas camera={{ position: [1, 0.75, 6] }}>
       <ambientLight intensity={1} />
       <Environment environmentIntensity={0.5} preset="studio"></Environment>
       <directionalLight
@@ -16,7 +16,11 @@ const FiberContainer = () => {
         shadow-mapSize-height={2048}
         shadow-bias={-0.0001}
       />
-      <OrbitControls />
+      <OrbitControls
+      // enableDamping={false}
+      // enableRotate={false}
+      // enablePan={false}
+      />
       <Experience />
     </Canvas>
   );
