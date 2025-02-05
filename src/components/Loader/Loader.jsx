@@ -5,15 +5,13 @@ import { useEffect } from "react";
 import { useRef } from "react";
 import { gsap } from "gsap";
 import { useState } from "react";
+import startState from "../../recoil/startState";
+import { useRecoilState } from "recoil";
 
 export function Loader() {
   const loadingRef = useRef();
   const { active, progress } = useProgress();
-  const [start, setStart] = useState(true);
-
-  useEffect(() => {
-    console.log(progress);
-  }, [progress]);
+  const [start, setStart] = useRecoilState(startState);
 
   useEffect(() => {
     if (progress === 100) {
@@ -34,7 +32,7 @@ export function Loader() {
             onClick={() => {
               setStart(false);
             }}
-            className="font-display z-100 relative top-1/3 m-auto pointer text-6xl text-neutral-300"
+            className="font-display z-100 relative top-1/3 m-auto cursor-pointer text-6xl text-neutral-300"
             disabled={progress < 100}
           >
             Ready to Chill?
