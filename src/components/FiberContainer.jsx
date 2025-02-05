@@ -16,11 +16,7 @@ const FiberContainer = () => {
         shadow-mapSize-height={2048}
         shadow-bias={-0.0001}
       />
-      <OrbitControls
-      // enableDamping={false}
-      // enableRotate={false}
-      // enablePan={false}
-      />
+
       <Experience />
     </Canvas>
   );
