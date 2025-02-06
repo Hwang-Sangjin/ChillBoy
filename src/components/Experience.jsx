@@ -25,8 +25,8 @@ const Experience = () => {
         >
         <Float rotationIntensity={0.4}>
           <ChillGuy />
-          <LeftEye />
-          <RightEye />
+          {/* <LeftEye />
+          <RightEye /> */}
           <Paragraph />
         </Float>
       </PresentationControls>

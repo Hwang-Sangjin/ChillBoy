@@ -20,18 +20,18 @@ const UI = () => {
       <div className="absolute flex flex-row bottom-40 right-5 px-5 py-2">
         <HiLightningBolt
           onClick={() => setFadeIn(false)}
-          className="m-5"
+          className="m-5 cursor-pointer"
           size={40}
         />
         {music ? (
           <HiOutlineVolumeUp
-            className="m-5"
+            className="m-5 cursor-pointer"
             onClick={() => toggleMusic()}
             size={40}
           />
         ) : (
           <HiOutlineVolumeOff
-            className="m-5"
+            className="m-5 cursor-pointer"
             onClick={() => toggleMusic()}
             size={40}
           />
