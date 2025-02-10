@@ -22,11 +22,10 @@ const Experience = () => {
         config={{ mass: 2, tension: 400 }}
         snap={{ mass: 4, tension: 400 }}
       >
-        >
         <Float rotationIntensity={0.4}>
           <ChillGuy />
-          {/* <LeftEye />
-          <RightEye /> */}
+          <LeftEye />
+          <RightEye />
           <Paragraph />
         </Float>
       </PresentationControls>
